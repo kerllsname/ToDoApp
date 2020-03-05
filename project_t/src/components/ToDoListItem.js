@@ -1,13 +1,14 @@
 import React from 'react'
+import './ToDoListItem.css'
 
-const ToDoListItem = ({label, important = false}) => {
-    
+const ToDoListItem = ({ label, important = false }) => {
+
     const spanStyle = {
-        color : important ? 'tomato' : 'black'
+        color: important ? 'tomato' : 'black'
     };
 
     return (
-        <span style={spanStyle}>{label}</span>
+        <span className="ToDoListItem" style={spanStyle}>{label}</span>
     );
 };
 

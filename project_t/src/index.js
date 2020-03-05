@@ -8,16 +8,16 @@ import SearchPanel from './components/SearchPanel'
 const App = () => {
 
     const toDoData = [
-        {label: 'Drink Coffee', important: false},
-        {label: 'Build App', important: true},
-        {label: 'Drink Tea  ', important: false},
+        { label: 'Drink Coffee', important: false, id: 1 },
+        { label: 'Build App', important: true, id: 2 },
+        { label: 'Drink Tea  ', important: false, id: 3 },
     ]
-    
+
     return (
         <div>
             <AppHeader />
             <SearchPanel />
-            <ToDoList todoes={toDoData}/>
+            <ToDoList todoes={toDoData} />
         </div>
     );
 };
